@@ -176,11 +176,11 @@ namespace AX_APP_RS
 
             if (brand.ToLower() == "bb")
             {
-                svr = "[BEAUTYAX.DYNDNS.INFO].[interfaceBBUat].dbo.";
+                svr = "[BEAUTYAX.DYNDNS.INFO].[interfaceBBPrd].dbo.";
             }
             else
             {
-                svr = "[192.168.10.199].[interfaceBBUat].dbo.";
+                svr = "[192.168.10.199].[interfaceBBPrd].dbo.";
             }
 
             inSql = " insert " + svr + "INVENTORDER_APP " +

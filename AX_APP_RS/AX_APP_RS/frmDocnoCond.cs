@@ -153,12 +153,12 @@ namespace AX_APP_RS
 
                 if(brand.ToLower() == "bb")
                 {
-                    svr = "[BEAUTYAX.DYNDNS.INFO].[interfaceBBUat].dbo.";
+                    svr = "[BEAUTYAX.DYNDNS.INFO].[interfaceBBPrd].dbo.";
                                   
                 }
                 else
                 {
-                    svr = "[192.168.10.199].[interfaceBBUat].dbo.";
+                    svr = "[192.168.10.199].[interfaceBBPrd].dbo.";
                 }
 
                 sql = "select ROW_NUMBER() over(order by a.whname)as rw ,a.whcode,a.WHNAME,a.DOCNO,convert(varchar(10),a.DOCDATE,103) docdate,sum(a.QTY) qty,sum(a.AMT) amt, isnull(b.APPCODE,'') as appcode , " +
